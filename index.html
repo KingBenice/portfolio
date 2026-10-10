@@ -3,347 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benjamin Akinade - Full Stack Developer</title>
+  <title>Benjamin Akinade | Portfolio</title>
+  <meta name="description" content="Full Stack Developer portfolio featuring web apps, UI design, and project work." />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <i class="fas fa-code"></i> Benjamin Akinade
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <span class="brand-mark">BA</span>
+        <span>Benjamin Akinade</span>
       </div>
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="hamburger">
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-title">Hey, I'm <span class="highlight">Benjamin Akinade</span></h1>
-        <p class="hero-subtitle">Full Stack Developer | Creative Problem Solver | Tech Enthusiast</p>
-        <p class="hero-description">
-          I build beautiful, functional web applications that solve real-world problems. Passionate about clean code, user experience, and continuous learning.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
-        <div class="hero-social">
-          <a href="https://github.com/KingBenice" target="_blank" rel="noopener noreferrer" class="social-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="avatar">
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            I'm a passionate developer with a strong foundation in HTML, CSS, and JavaScript. I love creating web applications that are not just functional, but also visually appealing and user-friendly.
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer • Problem Solver • Builder</p>
+          <h1>I design and build polished digital experiences.</h1>
+          <p class="lead">
+            I’m Benjamin Akinade, a developer focused on clean UI, responsive interfaces, and practical web applications that help people work better and live easier.
           </p>
-          <p>
-            With a focus on clean code and best practices, I strive to deliver high-quality solutions that exceed expectations. I'm always eager to learn new technologies and take on challenging projects.
-          </p>
-          <p>
-            When I'm not coding, you can find me exploring new tech trends, contributing to open-source projects, or working on side projects that push my creative boundaries.
-          </p>
-          <div class="about-stats">
-            <div class="stat">
-              <h3>5+</h3>
-              <p>Projects Built</p>
+          <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Hire Me</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/KingBenice" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-ring">
+              <div class="profile-badge">
+                <i class="fas fa-user"></i>
+              </div>
             </div>
-            <div class="stat">
-              <h3>100%</h3>
-              <p>Client Satisfaction</p>
-            </div>
-            <div class="stat">
-              <h3>∞</h3>
-              <p>Always Learning</p>
+            <div class="quick-stats">
+              <div>
+                <strong>5+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Focus</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="about-image">
-          <div class="image-placeholder">
-            <i class="fas fa-laptop-code"></i>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow accent">About</p>
+          <h2>Building useful products with intention.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I enjoy turning ideas into digital products that feel polished, intuitive, and useful. My work blends frontend logic with strong visual thinking, so every interface feels not only functional but memorable.
+            </p>
+            <p>
+              From calculators and productivity apps to API-powered dashboards, I focus on delivering experiences that balance clarity, speed, and aesthetics. I love creating clean and modern UX patterns that users can understand instantly.
+            </p>
+          </div>
+          <div class="about-panel">
+            <div class="mini-stat">
+              <span class="mini-label">Current focus</span>
+              <strong>Frontend & Product UI</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-label">Best at</span>
+              <strong>Responsive interfaces</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-label">Favorite tools</span>
+              <strong>HTML, CSS, JavaScript</strong>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <!-- Project 1: Calculator -->
-        <div class="project-card">
-          <div class="project-image">
-            <div class="image-bg calculator-bg">
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow accent">Projects</p>
+          <h2>Selected work.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual calc-bg">
               <i class="fas fa-calculator"></i>
             </div>
-          </div>
-          <div class="project-content">
-            <h3>Simple Calculator</h3>
-            <p>A clean and intuitive calculator with basic arithmetic operations, built with vanilla JavaScript.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
+            <div class="project-content">
+              <h3>Calculator</h3>
+              <p>A clean, responsive calculator built with HTML, CSS, and JavaScript. Focused on smooth UI and straightforward functionality.</p>
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KingBenice/calculator" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://KingBenice.github.io/calculator/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/KingBenice/calculator" target="_blank" class="link-btn">
-                <i class="fab fa-github"></i> Code
-              </a>
-              <a href="https://KingBenice.github.io/calculator/" target="_blank" class="link-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- Project 2: Weather Dashboard -->
-        <div class="project-card">
-          <div class="project-image">
-            <div class="image-bg weather-bg">
+          <article class="project-card">
+            <div class="project-visual weather-bg">
               <i class="fas fa-cloud-sun"></i>
             </div>
-          </div>
-          <div class="project-content">
-            <h3>Weather Dashboard</h3>
-            <p>Real-time weather app with API integration, 5-day forecasts, favorites, and dark mode support.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">API</span>
+            <div class="project-content">
+              <h3>Weather Dashboard</h3>
+              <p>A real-world weather dashboard with search, geolocation, favorites, and future forecasts. Designed to feel premium and practical.</p>
+              <div class="tag-row">
+                <span>API</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KingBenice/weather-dashboard" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://KingBenice.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/KingBenice/weather-dashboard" target="_blank" class="link-btn">
-                <i class="fab fa-github"></i> Code
-              </a>
-              <a href="https://KingBenice.github.io/weather-dashboard/" target="_blank" class="link-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- Project 3: Todo App -->
-        <div class="project-card">
-          <div class="project-image">
-            <div class="image-bg todo-bg">
+          <article class="project-card">
+            <div class="project-visual todo-bg">
               <i class="fas fa-tasks"></i>
             </div>
+            <div class="project-content">
+              <h3>TaskFlow Todo App</h3>
+              <p>A premium productivity app with tasks, notes, reminders, categories, due dates, dark mode, and local persistence.</p>
+              <div class="tag-row">
+                <span>Productivity</span>
+                <span>UI/UX</span>
+                <span>Local Storage</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KingBenice/todo-app" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://KingBenice.github.io/todo-app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow accent">Skills</p>
+          <h2>What I bring to the table.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
           </div>
-          <div class="project-content">
-            <h3>Todo App</h3>
-            <p>Feature-rich task manager with local storage, categories, priority levels, and dark mode.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">LocalStorage</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/KingBenice/todo-app" target="_blank" class="link-btn">
-                <i class="fab fa-github"></i> Code
-              </a>
-              <a href="https://KingBenice.github.io/todo-app/" target="_blank" class="link-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>GitHub</li>
+              <li>Git</li>
+              <li>Figma-inspired mockups</li>
+              <li>API integration</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Strengths</h3>
+            <ul>
+              <li>UI/UX thinking</li>
+              <li>Clean code</li>
+              <li>Problem solving</li>
+              <li>Creative design</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2 class="section-title">Skills & Technologies</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Frontend</h3>
-          <div class="skill-bars">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>HTML5</span>
-                <span>95%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 95%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>CSS3</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>JavaScript</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Responsive Design</span>
-                <span>92%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 92%"></div>
-              </div>
-            </div>
-          </div>
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow accent">Contact</p>
+          <h2>Let’s build something meaningful.</h2>
+          <p class="contact-copy">I’m open to freelance work, internships, collaborations, and product design opportunities.</p>
         </div>
-
-        <div class="skill-category">
-          <h3>Tools & Others</h3>
-          <div class="skill-bars">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Git & GitHub</span>
-                <span>88%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>UI/UX Design</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>API Integration</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Problem Solving</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Let's Work Together</h2>
-      <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
-      
-      <div class="contact-content">
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required class="form-input" />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required class="form-input" />
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
-          </div>
+        <form id="contactForm" class="contact-form">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your email" required />
+          <textarea rows="5" placeholder="Your message" required></textarea>
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>benjamin@example.com</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h4>Location</h4>
-              <p>Lagos, Nigeria</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <div>
-              <h4>Phone</h4>
-              <p>+234 (0) XXX-XXXX-XXX</p>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/KingBenice" target="_blank" rel="noopener noreferrer" class="social-icon">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Benjamin Akinade. All rights reserved.</p>
-      <p>Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Benjamin Akinade</p>
+      <div class="footer-links">
+        <a href="https://github.com/KingBenice" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
