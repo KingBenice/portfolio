@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benjamin Akinade | Tech + Creative Professional</title>
+    <title>Benjamin Akinade | Hybrid Digital Professional</title>
     <meta
       name="description"
-      content="Benjamin Akinade — Frontend Developer, Social Media Manager, Digital Media Specialist, and IT Professional. Building digital experiences and growing communities."
+      content="Benjamin Akinade — Frontend Developer, Social Media Manager, Digital Media Specialist, and Tech Support professional building digital experiences and growing communities."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -30,6 +30,7 @@
         --line: #e1ece9;
         --purple: #8b5cf6;
         --accent-blue: #38bdf8;
+        --gold: #f59e0b;
       }
 
       * {
@@ -67,7 +68,6 @@
         padding: 0 28px;
       }
 
-      /* NAV */
       nav {
         position: sticky;
         top: 0;
@@ -98,15 +98,14 @@
 
       .navlinks {
         display: flex;
-        gap: 28px;
+        gap: 26px;
         font-size: 13.5px;
         font-weight: 500;
       }
 
       .navlinks a {
-        text-decoration: none;
         color: var(--muted);
-        transition: color 0.2s;
+        transition: color 0.2s ease;
       }
 
       .navlinks a:hover {
@@ -115,13 +114,12 @@
 
       .nav-cta {
         background: var(--navy);
-        color: #fff;
+        color: white;
         padding: 9px 18px;
         border-radius: 100px;
         font-size: 13px;
         font-weight: 600;
-        text-decoration: none;
-        transition: background 0.2s;
+        transition: background 0.2s ease;
       }
 
       .nav-cta:hover {
@@ -150,14 +148,8 @@
         border-radius: 2px;
       }
 
-      /* HERO */
       .hero {
-        background: radial-gradient(
-          circle at 15% 20%,
-          #123c40 0%,
-          var(--navy) 55%,
-          var(--navy) 100%
-        );
+        background: radial-gradient(circle at 15% 20%, #123c40 0%, var(--navy) 55%, var(--navy) 100%);
         color: #fff;
         padding: 88px 0 0 0;
         overflow: hidden;
@@ -208,67 +200,53 @@
       .hero p.lede {
         font-size: 15.5px;
         color: #c9dad8;
-        max-width: 480px;
-        margin-bottom: 30px;
+        max-width: 500px;
+        margin-bottom: 24px;
       }
 
       .hero-tags {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
       }
 
       .hero-tag {
-        background: rgba(127, 216, 206, 0.15);
-        border: 1px solid rgba(127, 216, 206, 0.3);
+        background: rgba(127, 216, 206, 0.14);
+        border: 1px solid rgba(127, 216, 206, 0.28);
         color: var(--mint);
         padding: 6px 12px;
         border-radius: 6px;
         font-size: 11px;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
 
       .hero-ctas {
         display: flex;
+        flex-wrap: wrap;
         gap: 12px;
         margin-bottom: 56px;
-        flex-wrap: wrap;
+      }
+
+      .btn-primary,
+      .btn-ghost {
+        padding: 13px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 13.5px;
+        display: inline-block;
       }
 
       .btn-primary {
         background: var(--mint);
         color: var(--navy);
-        padding: 13px 24px;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 13.5px;
-        text-decoration: none;
-        display: inline-block;
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-
-      .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(13, 92, 99, 0.2);
       }
 
       .btn-ghost {
         border: 1px solid rgba(255, 255, 255, 0.25);
         color: #fff;
-        padding: 13px 24px;
-        border-radius: 8px;
-        font-weight: 600;
-        font-size: 13.5px;
-        text-decoration: none;
-        display: inline-block;
-        transition: background 0.2s;
-      }
-
-      .btn-ghost:hover {
-        background: rgba(255, 255, 255, 0.1);
       }
 
       .profile-visual {
@@ -278,18 +256,14 @@
         height: 280px;
         border-radius: 20px;
         border: 2px solid rgba(127, 216, 206, 0.3);
-        background: linear-gradient(
-          135deg,
-          rgba(127, 216, 206, 0.1),
-          rgba(13, 92, 99, 0.15)
-        );
+        background: linear-gradient(135deg, rgba(127, 216, 206, 0.1), rgba(13, 92, 99, 0.15));
         overflow: hidden;
-        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 80px;
         color: rgba(127, 216, 206, 0.4);
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
         transform: translateY(20px);
       }
 
@@ -325,7 +299,6 @@
         margin-top: 3px;
       }
 
-      /* SECTION SHARED */
       section {
         padding: 76px 0;
       }
@@ -354,7 +327,6 @@
         margin-bottom: 40px;
       }
 
-      /* HYBRID ROLES */
       .roles-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -368,7 +340,7 @@
         border-radius: 14px;
         padding: 24px 20px;
         text-align: center;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
 
       .role-card:hover {
@@ -395,7 +367,6 @@
         line-height: 1.5;
       }
 
-      /* FEATURED CASE STUDY */
       .feed-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -408,7 +379,7 @@
         border: 1px solid var(--line);
         border-radius: 12px;
         padding: 18px 16px;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
 
       .tile:hover {
@@ -472,7 +443,6 @@
         margin-top: 3px;
       }
 
-      /* PROJECT SHOWCASE */
       .project-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -485,7 +455,7 @@
         border: 1px solid var(--line);
         border-radius: 14px;
         overflow: hidden;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
 
       .project-card:hover {
@@ -507,8 +477,12 @@
         background: linear-gradient(135deg, var(--accent-blue), #0284c7);
       }
 
-      .project-visual.social {
+      .project-visual.dsgn {
         background: linear-gradient(135deg, #f59e0b, #d97706);
+      }
+
+      .project-visual.framer {
+        background: linear-gradient(135deg, #0ea5e9, #14b8a6);
       }
 
       .project-content {
@@ -560,7 +534,7 @@
         color: var(--navy);
         font-weight: 600;
         font-size: 12px;
-        transition: all 0.2s;
+        transition: all 0.2s ease;
       }
 
       .project-links a:hover {
@@ -569,7 +543,6 @@
         color: var(--teal);
       }
 
-      /* TIMELINE */
       .timeline-row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -594,7 +567,6 @@
         margin-top: 4px;
       }
 
-      /* SKILLS SECTION */
       .skills-wrap {
         display: flex;
         flex-wrap: wrap;
@@ -609,7 +581,7 @@
         font-size: 12.5px;
         font-weight: 600;
         color: var(--navy);
-        transition: all 0.2s;
+        transition: all 0.2s ease;
       }
 
       .skill-tag:hover {
@@ -631,7 +603,6 @@
         margin-bottom: 12px;
       }
 
-      /* FOOTER / CONTACT */
       footer {
         background: var(--navy);
         color: #fff;
@@ -660,11 +631,6 @@
         font-size: 13.5px;
         border-bottom: 1px solid rgba(127, 216, 206, 0.4);
         padding-bottom: 2px;
-        transition: border-color 0.2s;
-      }
-
-      .contact-links a:hover {
-        border-color: var(--mint);
       }
 
       .foot-bottom {
@@ -677,48 +643,59 @@
         justify-content: space-between;
       }
 
-      /* RESPONSIVE */
       @media (max-width: 820px) {
         .hero .wrap {
           grid-template-columns: 1fr;
         }
+
         .profile-visual {
           justify-self: start;
           margin-top: 30px;
         }
+
         .hero-stats {
           grid-template-columns: repeat(2, 1fr);
           row-gap: 16px;
         }
+
         .hero-stats .s:nth-child(3) {
           border-left: none;
         }
+
         .roles-grid {
           grid-template-columns: repeat(2, 1fr);
         }
+
         .feed-grid {
           grid-template-columns: repeat(2, 1fr);
         }
+
         .ad-row {
           grid-template-columns: repeat(3, 1fr);
           row-gap: 14px;
         }
+
         .project-grid {
           grid-template-columns: 1fr;
         }
+
         .timeline-row {
           grid-template-columns: repeat(2, 1fr);
           row-gap: 18px;
         }
+
         .navlinks {
           display: none;
         }
+
         .menu-toggle {
           display: flex;
         }
+
         .hero h1 {
           font-size: 34px;
         }
+
         .foot-bottom {
           flex-direction: column;
           gap: 10px;
@@ -729,21 +706,18 @@
         .hero h1 {
           font-size: 28px;
         }
-        .roles-grid {
-          grid-template-columns: 1fr;
-        }
-        .feed-grid {
-          grid-template-columns: 1fr;
-        }
-        .project-grid {
-          grid-template-columns: 1fr;
-        }
+
+        .roles-grid,
+        .feed-grid,
+        .project-grid,
         .timeline-row {
           grid-template-columns: 1fr;
         }
+
         .hero-ctas {
           flex-direction: column;
         }
+
         .btn-primary,
         .btn-ghost {
           width: 100%;
@@ -759,6 +733,7 @@
         <div class="navlinks">
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
+          <a href="#framer">Framer</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
@@ -775,29 +750,30 @@
       <div class="wrap">
         <div>
           <div class="eyebrow">Tech + Creative Professional</div>
-          <h1>
-            I build digital experiences <em>and</em> grow communities.
-          </h1>
+          <h1>I build digital experiences <em>and</em> grow communities.</h1>
           <p class="lede">
-            Frontend developer, social media strategist, digital creator, and tech support specialist. I combine technical skills with creative thinking to deliver solutions that work beautifully and perform measurably.
+            Frontend developer, social media strategist, digital media specialist, and tech support professional. I combine design thinking with technical execution to deliver experiences that are functional, visual, and human-centered.
           </p>
 
           <div class="hero-tags">
-            <span class="hero-tag">Frontend Development</span>
+            <span class="hero-tag">Frontend Dev</span>
             <span class="hero-tag">Social Media</span>
-            <span class="hero-tag">Creative Strategy</span>
+            <span class="hero-tag">Framer</span>
+            <span class="hero-tag">Figma</span>
             <span class="hero-tag">Tech Support</span>
           </div>
 
           <div class="hero-ctas">
-            <a class="btn-primary" href="#work">View Case Study</a>
+            <a class="btn-primary" href="#framer">View Framer Work</a>
             <a class="btn-ghost" href="#contact">Get in Touch</a>
           </div>
         </div>
+
         <div class="profile-visual">
           <i class="fas fa-user"></i>
         </div>
       </div>
+
       <div class="wrap">
         <div class="hero-stats">
           <div class="s">
@@ -825,45 +801,29 @@
         <div class="section-tag">What I Do</div>
         <h2 class="section-title">My Hybrid Skill Set</h2>
         <p class="section-desc">
-          I blend technical expertise with creative communication. Here's how I bring value across multiple disciplines.
+          I blend technical skills, design thinking, and communication to create digital experiences that are both useful and impactful.
         </p>
 
         <div class="roles-grid">
           <div class="role-card">
-            <div class="role-icon">
-              <i class="fas fa-code"></i>
-            </div>
+            <div class="role-icon"><i class="fas fa-code"></i></div>
             <h3>Frontend Developer</h3>
-            <p>
-              Build responsive, performant web applications with clean HTML, CSS, and JavaScript.
-            </p>
+            <p>Responsive websites and interfaces built with modern HTML, CSS, and JavaScript.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon">
-              <i class="fas fa-bullhorn"></i>
-            </div>
+            <div class="role-icon"><i class="fas fa-bullhorn"></i></div>
             <h3>Social Media Manager</h3>
-            <p>
-              Strategy, content planning, community engagement, and paid campaign management.
-            </p>
+            <p>Content strategy, audience growth, campaign execution, and community engagement.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon">
-              <i class="fas fa-palette"></i>
-            </div>
+            <div class="role-icon"><i class="fas fa-palette"></i></div>
             <h3>Digital Media Specialist</h3>
-            <p>
-              Graphic design, visual storytelling, content creation, and brand communication.
-            </p>
+            <p>Brand storytelling, visual communication, design systems, and creative execution.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon">
-              <i class="fas fa-tools"></i>
-            </div>
+            <div class="role-icon"><i class="fas fa-tools"></i></div>
             <h3>Tech Support Professional</h3>
-            <p>
-              System administration, troubleshooting, network support, and operational reliability.
-            </p>
+            <p>System administration, troubleshooting, hardware support, and operational reliability.</p>
           </div>
         </div>
       </div>
@@ -874,13 +834,13 @@
         <div class="section-tag">Featured Case Study</div>
         <h2 class="section-title">COS Foundation</h2>
         <p class="section-desc">
-          An education-access NGO needed a social presence built from nothing. I owned strategy, content, community, and paid ads solo. Aug – Dec 2025.
+          A mission-driven organization needed a stronger digital presence. I managed content strategy, community engagement, and paid social campaigns end-to-end.
         </p>
 
         <div class="feed-grid">
           <div class="tile">
             <div class="num">1,113%</div>
-            <div class="lab">Facebook views growth, 28 days</div>
+            <div class="lab">Facebook views growth in a 28-day window</div>
           </div>
           <div class="tile">
             <div class="num">8,881</div>
@@ -898,124 +858,152 @@
 
         <div class="ad-strip">
           <div class="tag">Paid Campaign — "Be the Change. Give Hope."</div>
-          <div class="headline">
-            Planned and ran a Meta engagement ad end-to-end on a ₦1,800/day budget.
-          </div>
+          <div class="headline">Planned and ran a Meta engagement ad end-to-end on a ₦1,800/day budget.</div>
           <div class="ad-row">
-            <div>
-              <div class="n">8,881</div>
-              <div class="l">People Reached</div>
-            </div>
-            <div>
-              <div class="n">10,555</div>
-              <div class="l">Impressions</div>
-            </div>
-            <div>
-              <div class="n">65</div>
-              <div class="l">Link Clicks</div>
-            </div>
-            <div>
-              <div class="n">8</div>
-              <div class="l">Conversations</div>
-            </div>
-            <div>
-              <div class="n">₦3,588</div>
-              <div class="l">Total Spend</div>
-            </div>
-            <div>
-              <div class="n">₦448</div>
-              <div class="l">Per Conversation</div>
-            </div>
+            <div><div class="n">8,881</div><div class="l">People Reached</div></div>
+            <div><div class="n">10,555</div><div class="l">Impressions</div></div>
+            <div><div class="n">65</div><div class="l">Link Clicks</div></div>
+            <div><div class="n">8</div><div class="l">Conversations</div></div>
+            <div><div class="n">₦3,588</div><div class="l">Total Spend</div></div>
+            <div><div class="n">₦448</div><div class="l">Per Conversation</div></div>
           </div>
         </div>
 
-        <div class="section-tag" style="margin-top: 8px">Timeline</div>
+        <div class="section-tag" style="margin-top:8px;">Timeline</div>
         <div class="timeline-row">
-          <div class="tl-item">
-            <div class="m">Aug 2025</div>
-            <div class="d">Onboarded. Built brand templates & posting calendar.</div>
-          </div>
-          <div class="tl-item">
-            <div class="m">Sep 2025</div>
-            <div class="d">Instagram launched. Reels pulling 250–350 views consistently.</div>
-          </div>
-          <div class="tl-item">
-            <div class="m">Oct 2025</div>
-            <div class="d">First Meta ad campaign live. Facebook views up over 1,000%.</div>
-          </div>
-          <div class="tl-item">
-            <div class="m">Dec 2025</div>
-            <div class="d">Wrapped with growth trend climbing. Proof of performance.</div>
-          </div>
+          <div class="tl-item"><div class="m">Aug 2025</div><div class="d">Built templates and posting calendar from scratch.</div></div>
+          <div class="tl-item"><div class="m">Sep 2025</div><div class="d">Instagram launched and reels began pulling steady engagement.</div></div>
+          <div class="tl-item"><div class="m">Oct 2025</div><div class="d">Meta campaign launched and Facebook reach surged.</div></div>
+          <div class="tl-item"><div class="m">Dec 2025</div><div class="d">Wrapped the engagement with measurable growth trends.</div></div>
         </div>
       </div>
     </section>
 
-    <section id="projects" style="background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line)">
+    <section id="framer" style="background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="wrap">
+        <div class="section-tag">Framer Work</div>
+        <h2 class="section-title">Design and build work done in Framer</h2>
+        <p class="section-desc">
+          I design and publish websites using Framer, combining clean UI systems, modern interactions, and conversion-focused layouts.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual framer">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="project-content">
+              <h3>Forge Fitness Studio</h3>
+              <p>Framer-built brand experience for a modern fitness studio, designed to convert interest into enquiries and memberships.</p>
+              <div class="tag-row">
+                <span>Framer</span>
+                <span>Brand</span>
+                <span>UX</span>
+              </div>
+              <div class="project-links">
+                <a href="https://forgefitnessstudio.framer.wiki/" target="_blank" rel="noopener noreferrer">View Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual framer">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="project-content">
+              <h3>Amara Properties</h3>
+              <p>Framer-made property showcase and brand presentation focused on clarity, elegance, and premium feel.</p>
+              <div class="tag-row">
+                <span>Framer</span>
+                <span>Real Estate</span>
+                <span>UI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://amaraproperties.framer.media/" target="_blank" rel="noopener noreferrer">View Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual dsgn">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="project-content">
+              <h3>Design & Prototyping</h3>
+              <p>I use Figma and Framer to translate ideas into polished user experiences, prototypes, and publication-ready frontends.</p>
+              <div class="tag-row">
+                <span>Figma</span>
+                <span>Prototype</span>
+                <span>Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#skills">See Tools</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
       <div class="wrap">
         <div class="section-tag">Development Work</div>
         <h2 class="section-title">Frontend Projects</h2>
         <p class="section-desc">
-          Responsive, user-focused web applications built with clean code and modern design.
+          Responsive web applications and real-world UI work created with clean code and practical product thinking.
         </p>
 
         <div class="project-grid">
-          <div class="project-card">
-            <div class="project-visual dev">
-              <i class="fas fa-calculator"></i>
-            </div>
+          <article class="project-card">
+            <div class="project-visual dev"><i class="fas fa-calculator"></i></div>
             <div class="project-content">
               <h3>Calculator</h3>
-              <p>A responsive calculator with smooth functionality and clean interface.</p>
+              <p>Responsive calculator with smooth functionality and a clean, minimal interface.</p>
               <div class="tag-row">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/KingBenice/calculator" target="_blank">Code</a>
-                <a href="https://KingBenice.github.io/calculator/" target="_blank">Live</a>
+                <a href="https://github.com/KingBenice/calculator" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://KingBenice.github.io/calculator/" target="_blank" rel="noopener noreferrer">Live</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
-            <div class="project-visual dev">
-              <i class="fas fa-cloud-sun"></i>
-            </div>
+          <article class="project-card">
+            <div class="project-visual dev"><i class="fas fa-cloud-sun"></i></div>
             <div class="project-content">
               <h3>Weather Dashboard</h3>
-              <p>Real-time weather dashboard with search, geolocation, and API integration.</p>
+              <p>Real-time weather dashboard with search, geolocation, and responsive data display.</p>
               <div class="tag-row">
                 <span>API</span>
                 <span>JavaScript</span>
                 <span>Responsive</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/KingBenice/weather-dashboard" target="_blank">Code</a>
-                <a href="https://KingBenice.github.io/weather-dashboard/" target="_blank">Live</a>
+                <a href="https://github.com/KingBenice/weather-dashboard" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://KingBenice.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer">Live</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
-            <div class="project-visual dev">
-              <i class="fas fa-tasks"></i>
-            </div>
+          <article class="project-card">
+            <div class="project-visual dev"><i class="fas fa-tasks"></i></div>
             <div class="project-content">
               <h3>TaskFlow Todo App</h3>
-              <p>Premium productivity app with dark mode, local storage, and advanced features.</p>
+              <p>Productivity-focused app with local storage, task management, and a premium interface.</p>
               <div class="tag-row">
                 <span>Productivity</span>
                 <span>UI/UX</span>
                 <span>Local Storage</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/KingBenice/todo-app" target="_blank">Code</a>
-                <a href="https://KingBenice.github.io/todo-app/" target="_blank">Live</a>
+                <a href="https://github.com/KingBenice/todo-app" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://KingBenice.github.io/todo-app/" target="_blank" rel="noopener noreferrer">Live</a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1023,9 +1011,9 @@
     <section id="skills">
       <div class="wrap">
         <div class="section-tag">Skills & Tools</div>
-        <h2 class="section-title">My Toolkit</h2>
+        <h2 class="section-title">What I Bring</h2>
         <p class="section-desc">
-          A balanced mix of technical, creative, and professional capabilities.
+          A balanced toolkit spanning digital communication, frontend implementation, and technical support.
         </p>
 
         <div class="skills-category">
@@ -1037,41 +1025,38 @@
             <div class="skill-tag">Responsive Design</div>
             <div class="skill-tag">API Integration</div>
             <div class="skill-tag">GitHub</div>
-            <div class="skill-tag">Git</div>
             <div class="skill-tag">GitHub Pages</div>
           </div>
         </div>
 
         <div class="skills-category">
-          <h4>Social Media & Strategy</h4>
+          <h4>Design & Prototyping</h4>
+          <div class="skills-wrap">
+            <div class="skill-tag">Figma</div>
+            <div class="skill-tag">Framer</div>
+            <div class="skill-tag">Design Systems</div>
+            <div class="skill-tag">Brand Design</div>
+            <div class="skill-tag">UI/UX Thinking</div>
+            <div class="skill-tag">Visual Storytelling</div>
+            <div class="skill-tag">Content Design</div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h4>Social Media & Growth</h4>
           <div class="skills-wrap">
             <div class="skill-tag">Content Strategy</div>
-            <div class="skill-tag">Facebook & Instagram</div>
             <div class="skill-tag">Meta Ads Manager</div>
             <div class="skill-tag">Community Management</div>
             <div class="skill-tag">Analytics & Reporting</div>
             <div class="skill-tag">LinkedIn Strategy</div>
-            <div class="skill-tag">Campaign Planning</div>
             <div class="skill-tag">Organic Growth</div>
+            <div class="skill-tag">Campaign Planning</div>
           </div>
         </div>
 
         <div class="skills-category">
-          <h4>Creative & Design</h4>
-          <div class="skills-wrap">
-            <div class="skill-tag">Graphic Design</div>
-            <div class="skill-tag">Visual Storytelling</div>
-            <div class="skill-tag">Photography</div>
-            <div class="skill-tag">Videography</div>
-            <div class="skill-tag">Content Creation</div>
-            <div class="skill-tag">Brand Communication</div>
-            <div class="skill-tag">UI/UX Thinking</div>
-            <div class="skill-tag">Copywriting</div>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h4>Technical Support & Systems</h4>
+          <h4>Tech Support & Systems</h4>
           <div class="skills-wrap">
             <div class="skill-tag">IT Support</div>
             <div class="skill-tag">Hardware Troubleshooting</div>
@@ -1079,22 +1064,7 @@
             <div class="skill-tag">Network Configuration</div>
             <div class="skill-tag">Data Management</div>
             <div class="skill-tag">Security & Compliance</div>
-            <div class="skill-tag">Problem Solving</div>
-            <div class="skill-tag">Microsoft Office Suite</div>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h4>Professional Strengths</h4>
-          <div class="skills-wrap">
-            <div class="skill-tag">Communication</div>
-            <div class="skill-tag">Creativity</div>
-            <div class="skill-tag">Adaptability</div>
-            <div class="skill-tag">Attention to Detail</div>
-            <div class="skill-tag">Reliability</div>
-            <div class="skill-tag">Quick Learner</div>
-            <div class="skill-tag">Collaboration</div>
-            <div class="skill-tag">Customer Service</div>
+            <div class="skill-tag">Customer Support</div>
           </div>
         </div>
       </div>
@@ -1102,31 +1072,39 @@
 
     <footer id="contact">
       <div class="wrap">
-        <div class="section-tag" style="color: var(--mint)">Let's Work Together</div>
-        <h2 class="section-title">Open to Freelance & Full-Time Opportunities</h2>
-        <p class="section-desc">
-          Whether you need a frontend developer, social media strategist, digital content creator, or tech support specialist — I'm ready to help. Let's build something meaningful.
-        </p>
+        <div class="section-tag" style="color: var(--mint);">Let's Work Together</div>
+        <h2 class="section-title">Open to freelance & full-time roles</h2>
+        <p class="section-desc">I’m available for frontend, content, design, digital marketing, social media, and tech support opportunities.</p>
         <div class="contact-links">
           <a href="mailto:benjamino.akinade@gmail.com">benjamino.akinade@gmail.com</a>
           <a href="tel:+2348147305965">+234 814 730 5965</a>
-          <a href="https://www.linkedin.com/in/benjaminoakinade" target="_blank">linkedin.com/in/benjaminoakinade</a>
-          <a href="https://github.com/KingBenice" target="_blank">github.com/KingBenice</a>
+          <a href="https://www.linkedin.com/in/benjaminoakinade" target="_blank" rel="noopener noreferrer">linkedin.com/in/benjaminoakinade</a>
+          <a href="https://github.com/KingBenice" target="_blank" rel="noopener noreferrer">github.com/KingBenice</a>
         </div>
         <div class="foot-bottom">
-          <span>Benjamin Oreoluwa Akinade</span>
-          <span>Teal Trust · Tech + Creative Professional</span>
+          <span>Benjamin Akinade</span>
+          <span>Teal Trust · Hybrid Digital Professional</span>
         </div>
       </div>
     </footer>
 
     <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const nav = document.querySelector(".navlinks");
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.navlinks');
 
-      if (menuToggle) {
-        menuToggle.addEventListener("click", () => {
-          nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+          navLinks.style.position = 'absolute';
+          navLinks.style.top = '64px';
+          navLinks.style.left = '16px';
+          navLinks.style.right = '16px';
+          navLinks.style.flexDirection = 'column';
+          navLinks.style.background = 'rgba(11,31,46,0.96)';
+          navLinks.style.padding = '20px';
+          navLinks.style.borderRadius = '12px';
+          navLinks.style.border = '1px solid rgba(255,255,255,0.08)';
+          navLinks.style.zIndex = '10';
         });
       }
     </script>
