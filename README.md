@@ -1,52 +1,100 @@
 # Benjamin Akinade Portfolio
 
-A modern personal portfolio designed to showcase projects, technical skills, and work ethic in a clean and professional format.
+A modern, hybrid portfolio showcasing frontend development, social media strategy, digital media creation, and tech support expertise.
 
 ## Features
 
-- Modern hero section and strong personal branding
-- About section with focused product and frontend messaging
-- Project showcase cards linking to live demos and GitHub repositories
-- Skills section for frontend, tools, and strengths
-- Contact form UI for inquiries and collaborations
-- Responsive layout for mobile and desktop devices
-- Clean navigation with smooth scrolling
+- **Hero Section** with role positioning and key stats
+- **4 Hybrid Roles** clearly outlined with descriptions
+- **COS Foundation Case Study** with real metrics and campaign results
+- **Frontend Projects** with live demos and source code links
+- **Comprehensive Skills** organized by discipline
+- **Contact Integration** with multiple ways to connect
+- **Responsive Design** for mobile and desktop devices
+- **Modern Styling** with Teal Trust brand colors
 
 ## Live Demo
 
 https://KingBenice.github.io/portfolio/
 
-## Project Links Included
+## Project Highlights
 
-- Calculator: https://KingBenice.github.io/calculator/
-- Weather Dashboard: https://KingBenice.github.io/weather-dashboard/
-- Todo App: https://KingBenice.github.io/todo-app/
+### Featured Work
+- **COS Foundation**: Social media growth from zero — 1,113% Facebook growth, 8,881 campaign reach, 8 donor conversations
+- **Calculator**: Responsive web calculator with smooth UI
+- **Weather Dashboard**: Real-time weather app with API integration
+- **Todo App**: Premium task management with local storage
 
-## Repositories
+## Skills Breakdown
 
-- Portfolio: https://github.com/KingBenice/portfolio
-- Calculator: https://github.com/KingBenice/calculator
-- Weather Dashboard: https://github.com/KingBenice/weather-dashboard
-- Todo App: https://github.com/KingBenice/todo-app
+**Frontend Development**
+- HTML5, CSS3, JavaScript
+- Responsive Design
+- API Integration
+- GitHub Pages
+
+**Social Media & Strategy**
+- Content Planning & Execution
+- Meta Ads Manager
+- Community Management
+- Analytics & Growth
+
+**Creative & Design**
+- Graphic Design
+- Visual Storytelling
+- Photography & Videography
+- Content Creation
+
+**Tech Support & Systems**
+- IT Support & Troubleshooting
+- System Administration
+- Network Configuration
+- Data Security
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3 (with custom properties and responsive design)
+- JavaScript (vanilla)
+- Google Fonts (Sora, Inter)
+- Font Awesome Icons
 - GitHub Pages
 
-## Run Locally
+## What's Included
 
-```bash
-python -m http.server 8000
 ```
-Then open: http://localhost:8000
+portfolio/
+├── index.html      (Main portfolio page)
+├── style.css       (Internal styles)
+├── script.js       (Mobile menu functionality)
+└── README.md       (This file)
+```
 
-## Author
+## How to Use
 
-Benjamin Akinade
+1. Clone or fork this repository
+2. Edit `index.html` to customize content
+3. Update social links and contact information
+4. Push to GitHub and enable Pages from the main branch
+5. Your portfolio is live at `username.github.io/portfolio`
 
-## Purpose
+## Contact
 
-This portfolio is designed to present a strong front-end developer profile with practical project work and readable UI structure for employers and collaborators.
+**Benjamin Oreoluwa Akinade**
+- Email: benjamino.akinade@gmail.com
+- Phone: +234 814 730 5965
+- LinkedIn: linkedin.com/in/benjaminoakinade
+- GitHub: github.com/KingBenice
+
+## Opportunities
+
+I'm open to:
+- Frontend development roles
+- Social media management positions
+- Digital content and creative strategy
+- Tech support and system administration
+- Hybrid and remote work
+
+---
+
+**Teal Trust · Tech + Creative Professional**
