@@ -231,7 +231,8 @@
       }
 
       .btn-primary,
-      .btn-ghost {
+      .btn-ghost,
+      .support-request {
         padding: 13px 24px;
         border-radius: 8px;
         font-weight: 700;
@@ -247,6 +248,13 @@
       .btn-ghost {
         border: 1px solid rgba(255, 255, 255, 0.25);
         color: #fff;
+      }
+
+      .support-request {
+        background: var(--teal);
+        color: white;
+        border: 1px solid var(--teal);
+        margin-top: 18px;
       }
 
       .profile-visual {
@@ -365,6 +373,57 @@
         font-size: 12.5px;
         color: var(--muted);
         line-height: 1.5;
+      }
+
+      .role-workflow {
+        margin-top: 16px;
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+        text-align: left;
+      }
+
+      .role-workflow strong {
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--teal);
+        margin-bottom: 8px;
+      }
+
+      .role-workflow ol {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        font-size: 11.5px;
+        line-height: 1.7;
+      }
+
+      .role-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 16px;
+      }
+
+      .role-links a {
+        flex: 1;
+        min-width: 110px;
+        text-align: center;
+        border-radius: 8px;
+        padding: 9px 10px;
+        font-size: 11px;
+        font-weight: 700;
+        border: 1px solid var(--line);
+        background: #f7fbfb;
+        color: var(--navy);
+      }
+
+      .role-links .support-link {
+        background: var(--teal);
+        border-color: var(--teal);
+        color: #fff;
       }
 
       .feed-grid {
@@ -719,7 +778,8 @@
         }
 
         .btn-primary,
-        .btn-ghost {
+        .btn-ghost,
+        .support-request {
           width: 100%;
           text-align: center;
         }
@@ -809,21 +869,47 @@
             <div class="role-icon"><i class="fas fa-code"></i></div>
             <h3>Frontend Developer</h3>
             <p>Responsive websites and interfaces built with modern HTML, CSS, and JavaScript.</p>
+            <div class="role-links">
+              <a href="downloads/frontend-development-sheet.pdf" download>Download PDF</a>
+            </div>
           </div>
+
           <div class="role-card">
             <div class="role-icon"><i class="fas fa-bullhorn"></i></div>
             <h3>Social Media Manager</h3>
             <p>Content strategy, audience growth, campaign execution, and community engagement.</p>
+            <div class="role-links">
+              <a href="downloads/social-media-manager-sheet.pdf" download>Download PDF</a>
+            </div>
           </div>
+
           <div class="role-card">
             <div class="role-icon"><i class="fas fa-palette"></i></div>
             <h3>Digital Media Specialist</h3>
             <p>Brand storytelling, visual communication, design systems, and creative execution.</p>
+            <div class="role-links">
+              <a href="downloads/digital-media-specialist-sheet.pdf" download>Download PDF</a>
+            </div>
           </div>
+
           <div class="role-card">
             <div class="role-icon"><i class="fas fa-tools"></i></div>
             <h3>Tech Support Professional</h3>
             <p>Remote troubleshooting with AnyDesk, command-line diagnostics (ipconfig, ping), system administration, and operational reliability.</p>
+            <div class="role-workflow">
+              <strong>Remote Support Workflow</strong>
+              <ol>
+                <li>Request support by email and share your issue summary.</li>
+                <li>Confirm access details and the preferred support method.</li>
+                <li>Run remote diagnostics with AnyDesk and command-line checks.</li>
+                <li>Apply the fix, verify functionality, and update the user.</li>
+                <li>Document the result and recommend preventive steps if needed.</li>
+              </ol>
+            </div>
+            <div class="role-links">
+              <a href="downloads/tech-support-professional-sheet.pdf" download>Download PDF</a>
+              <a class="support-link" href="mailto:benjamino.akinade@gmail.com?subject=Remote%20Support%20Request&body=Hello%20Benjamin%2C%0A%0AI%20would%20like%20to%20request%20remote%20support.%0A%0AProblem%20summary%3A%0A%0A%0APreference%20for%20support%3A%20%5BPhone%20call%20/%20AnyDesk%20session%20/%20Email%20follow-up%5D%0A%0ADevice%20details%3A%0A%0AThank%20you.%0A">Request Remote Support</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1083,6 +1169,7 @@
           <a href="https://www.linkedin.com/in/benjaminoakinade" target="_blank" rel="noopener noreferrer">linkedin.com/in/benjaminoakinade</a>
           <a href="https://github.com/KingBenice" target="_blank" rel="noopener noreferrer">github.com/KingBenice</a>
         </div>
+        <a class="support-request" href="mailto:benjamino.akinade@gmail.com?subject=Remote%20Support%20Request&body=Hello%20Benjamin%2C%0A%0AI%20would%20like%20to%20request%20remote%20support.%0A%0AProblem%20summary%3A%0A%0A%0APreference%20for%20support%3A%20%5BPhone%20call%20/%20AnyDesk%20session%20/%20Email%20follow-up%5D%0A%0ADevice%20details%3A%0A%0AThank%20you.%0A">Request Remote Support</a>
         <div class="foot-bottom">
           <span>Benjamin Akinade</span>
           <span>Teal Trust · Hybrid Digital Professional</span>
