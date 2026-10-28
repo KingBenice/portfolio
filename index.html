@@ -6,7 +6,7 @@
     <title>Benjamin Akinade | Hybrid Digital Professional</title>
     <meta
       name="description"
-      content="Benjamin Akinade — Frontend Developer, Social Media Manager, Digital Media Specialist, and Tech Support professional building digital experiences and growing communities."
+      content="Benjamin Akinade — Computer Science graduate and hybrid digital professional in Lagos. Frontend, Framer, social strategy, and IT support for teams that need build + operations."
     />
     <meta property="og:title" content="Benjamin Akinade | Hybrid Digital Professional" />
     <meta property="og:description" content="Frontend developer, social media strategist, and digital media specialist building polished experiences and measurable growth." />
@@ -436,6 +436,39 @@
         margin-bottom: 40px;
       }
 
+      /* ========== ABOUT ========== */
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .about-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 22px 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .about-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+      }
+
+      .about-card h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 10px;
+      }
+
+      .about-card p {
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
       /* ========== ROLES ========== */
       .roles-grid {
         display: grid;
@@ -670,7 +703,7 @@
       }
 
       .project-visual {
-        height: 160px;
+        height: 180px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -681,12 +714,25 @@
         overflow: hidden;
       }
 
+      .project-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        display: block;
+      }
+
       .project-visual::after {
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.15));
+        background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.2));
         pointer-events: none;
+        z-index: 1;
+      }
+
+      .project-visual.has-shot::after {
+        background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.25));
       }
 
       .project-visual.dev {
@@ -898,6 +944,10 @@
           grid-template-columns: repeat(2, 1fr);
         }
 
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
         .timeline-row {
           grid-template-columns: repeat(3, 1fr);
           row-gap: 20px;
@@ -969,7 +1019,8 @@
         .feed-grid,
         .project-grid,
         .timeline-row,
-        .ad-row {
+        .ad-row,
+        .about-grid {
           grid-template-columns: 1fr;
         }
 
@@ -1040,6 +1091,7 @@
       <div class="wrap">
         <a href="#" class="brand" aria-label="Benjamin Akinade — Home">Benjamin <span>Akinade</span></a>
         <div class="navlinks" id="navLinks" role="navigation" aria-label="Main">
+          <a href="#about">About</a>
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
           <a href="#framer">Framer</a>
@@ -1118,6 +1170,36 @@
         </div>
       </div>
     </header>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-tag">About</div>
+        <h2 class="section-title" id="about-title">Background &amp; Approach</h2>
+        <p class="section-desc" style="max-width: 720px; margin-bottom: 28px;">
+          Computer Science graduate (B.Sc, Adekunle Ajasin University) based in Lagos, Nigeria. I combine hands-on IT support and systems experience with frontend development, Framer design, and digital growth work.
+        </p>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Professional path</h3>
+            <p>
+              Experience spans IT support at Wema Bank and Ejigbo LCDA, system administration and auditing at Opeyemi Baking Industries, and community IT coordination during NYSC. Alongside that, I design conversion-focused Framer sites and run measurable social campaigns.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>How I work</h3>
+            <p>
+              Clear communication, fast diagnostics, and practical delivery. Whether fixing systems, shipping a landing page, or growing an audience, I focus on results stakeholders can measure — uptime, conversions, reach, and trust.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Currently</h3>
+            <p>
+              Open to frontend, Framer, social strategy, and remote tech support roles or projects. Comfortable supporting startups and teams that need someone who can both build and keep things running.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="roles" aria-labelledby="roles-title">
       <div class="wrap">
@@ -1266,8 +1348,8 @@
         </p>
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-visual framer" aria-hidden="true">
-              <i class="fas fa-house"></i>
+            <div class="project-visual framer has-shot">
+              <img src="screenshots/pprealty.jpg" alt="PP Realty Framer website preview" loading="lazy" width="640" height="400" />
             </div>
             <div class="project-content">
               <h3>PP Realty</h3>
@@ -1284,8 +1366,8 @@
             </div>
           </article>
           <article class="project-card">
-            <div class="project-visual framer" aria-hidden="true">
-              <i class="fas fa-hotel"></i>
+            <div class="project-visual framer has-shot">
+              <img src="screenshots/goodhouse.jpg" alt="GoodHouse boutique hotel Framer website preview" loading="lazy" width="640" height="400" />
             </div>
             <div class="project-content">
               <h3>GoodHouse</h3>
@@ -1302,8 +1384,8 @@
             </div>
           </article>
           <article class="project-card">
-            <div class="project-visual framer" aria-hidden="true">
-              <i class="fas fa-heartbeat"></i>
+            <div class="project-visual framer has-shot">
+              <img src="screenshots/richclay.jpg" alt="RichClay veterinary service Framer website preview" loading="lazy" width="640" height="400" />
             </div>
             <div class="project-content">
               <h3>RichClay</h3>
@@ -1320,8 +1402,8 @@
             </div>
           </article>
           <article class="project-card">
-            <div class="project-visual framer" aria-hidden="true">
-              <i class="fas fa-building"></i>
+            <div class="project-visual framer has-shot">
+              <img src="screenshots/amara.jpg" alt="Amara Properties luxury real estate Framer website preview" loading="lazy" width="640" height="400" />
             </div>
             <div class="project-content">
               <h3>Amara Properties</h3>
@@ -1338,8 +1420,8 @@
             </div>
           </article>
           <article class="project-card">
-            <div class="project-visual framer" aria-hidden="true">
-              <i class="fas fa-dumbbell"></i>
+            <div class="project-visual framer has-shot">
+              <img src="screenshots/forge.jpg" alt="Forge Fitness Studio Framer website preview" loading="lazy" width="640" height="400" />
             </div>
             <div class="project-content">
               <h3>Forge Fitness Studio</h3>
@@ -1442,7 +1524,7 @@
         <div class="section-tag">Skills & Tools</div>
         <h2 class="section-title" id="skills-title">What I Bring</h2>
         <p class="section-desc">
-          A balanced toolkit spanning digital communication, frontend implementation, and technical support.
+          A balanced toolkit spanning frontend implementation, design, digital growth, and technical support.
         </p>
         <div class="skills-category">
           <h4>Frontend & Development</h4>
@@ -1465,6 +1547,31 @@
             <div class="skill-tag">Brand Design</div>
             <div class="skill-tag">UI/UX Thinking</div>
             <div class="skill-tag">Visual Storytelling</div>
+            <div class="skill-tag">Video Animation</div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>IT Support & Systems</h4>
+          <div class="skills-wrap">
+            <div class="skill-tag">Hardware Troubleshooting</div>
+            <div class="skill-tag">Network Configuration</div>
+            <div class="skill-tag">LAN / WAN</div>
+            <div class="skill-tag">System Administration</div>
+            <div class="skill-tag">Microsoft Office Suite</div>
+            <div class="skill-tag">Data Integrity</div>
+            <div class="skill-tag">Remote Support</div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Growth, Soft Skills & Certifications</h4>
+          <div class="skills-wrap">
+            <div class="skill-tag">Social Strategy</div>
+            <div class="skill-tag">Content Planning</div>
+            <div class="skill-tag">Customer Service</div>
+            <div class="skill-tag">Problem Solving</div>
+            <div class="skill-tag">Network Security (2023)</div>
+            <div class="skill-tag">Audit Fundamentals (2024)</div>
+            <div class="skill-tag">Customer Management (2023)</div>
           </div>
         </div>
       </div>
